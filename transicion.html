@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh ; display: grid; place-items: center;
+            background: #0f0f0f ;
+            font-family: sans-serif;
+        }
+        .card{
+            background: #1a1a1a; color: white;
+            padding: 30px; border-radius: 22px; text-align: center;
+            cursor: pointer; position: relative;
+            border: 1px solid  #2e2e4a;
+            box-shadow: 0 0 0 rgba(0, 0,0,0 );
+            transition: all .4s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #c084fc;
+            box-shadow: 0 0 30px rgba( 192, 132, 252 , .45);
+        }
+        .emoji { font-size: 50px; transition: transform .4s ease;}
+        .card:hover  .emoji { transform: scale(1.4) rotate(-10deg,); }
+        .card p {color: #a1a1b8; font-size: 14px; margin-top: 5px;}
+        .tip {
+            position: absolute; bottom: 115%; left: 50%;
+            transform: translateX(-50%)translateY(10px);
+            background: #c084fc; color: #0f0f1a; font-weight: bold;
+            font-size: 13px; padding: 8px 12px; border-radius: 12px;
+            white-space: 0; visibility: hidden; transition: all .3s ease;
+        }
+        .card:hover.tip {
+            opacity: 1; visibility: visible;
+            transform: translateX(-50%) translateY(0);
+            }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">👁️</div>
+        <h3>Modo Oscuro</h3>
+        <p>Pasa el mouse</p>
+        <span class="tip">🏐 si se ve el tipo de transicion </span>
+    </div>
+    
+</body>
+</html>
